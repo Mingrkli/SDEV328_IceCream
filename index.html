@@ -12,49 +12,37 @@
 <div>
     <h1>Welcome to my Ice Cream Shoppe!</h1>
 
-    <form action="/process.php" method="post">
+    <form action="./process.php" method="post">
         <h2>How many scoops?</h2>
-        <input type="text" />
+        <input type="text" name="scoops" />
 
         <h2>Choose flavor(s)</h2>
         <label
         >Vanilla
-            <input
-                    type="checkbox"
-                    name="IceCreamFlavor[]"
-                    value="Vanilla"
+            <input type="checkbox" name="flavor[]" value="Vanilla"
             /></label>
         <label
         >Chocolate
-            <input
-                    type="checkbox"
-                    name="IceCreamFlavor[]"
-                    value="Chocolate"
+            <input type="checkbox" name="flavor[]" value="Chocolate"
             /></label>
         <label
         >Strawberry
-            <input
-                    type="checkbox"
-                    name="IceCreamFlavor[]"
-                    value="Strawberry"
+            <input type="checkbox" name="flavor[]" value="Strawberry"
             /></label>
         <label
         >Caramel
-            <input
-                    type="checkbox"
-                    name="IceCreamFlavor[]"
-                    value="Caramel"
+            <input type="checkbox" name="flavor[]" value="Caramel"
             /></label>
 
         <h2>Choose One</h2>
         <label
-        >Sugar Cone <input type="radio" name="IceCreamConeType"
+        >Sugar Cone <input type="radio" name="cone" value="Sugar"
         /></label>
         <label
-        >Waffle Cone <input type="radio" name="IceCreamConeType"
+        >Waffle Cone <input type="radio" name="cone" value="Waffle"
         /></label>
         <label
-        >Cup <input type="radio" name="IceCreamConeType"
+        >Cup <input type="radio" name="cone" value="Cup"
         /></label>
 
         <input type="submit" value="Place Order" />
